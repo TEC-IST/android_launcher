@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: black; /* background color CSS name or #hex */
+            color: #fff; /* Text color CSS name or #hex */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        h1 {font-size: 1.5em;}
+
+        div.app {
+            display: inline-block; //show multiple apps per line if other style settings permit
+            margin: 5px;
+            padding: 10px;
+            border: 1px solid #404040; //visible box around app name
+            /* border-radius: 5px; uncomment for rounded corners*/
+            background-color: #000000;
+            width: 40%;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Welcome to the TEC.IST Launcher</h1>
+    <p>Add any web content you like here</p>
+    <div id="appList"></div>
+</div>
+<script>
+//add Javascript here and/or inject it from MainActivity.kt with webView.evaluateJavascript("your javascript here", null)
+//declare Android functions in MainActivity.kt within AnddroidBridge e.g.: fun yourFunctionName(exampleInput:String){} -- then call from JS with Android.yourFunctionName();
+</script>
+</body>
+</html>
