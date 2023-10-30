@@ -13,7 +13,6 @@ val apps = applicationContext.packageManager.queryIntentActivities(intent, 0)
 for (app in apps) {
     val appName = app.activityInfo.loadLabel(packageManager).toString()
     val appPackageName = app.activityInfo.packageName.toString()
-    Log.i("debug","$appName -- $appPackageName")
     val js = """appToAppend = document.createElement('div');
         appToAppend.setAttribute('class', 'app');
         |appToAppend.setAttribute('id', '$appPackageName');
