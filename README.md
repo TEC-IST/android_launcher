@@ -1,4 +1,7 @@
 # android_launcher
+
+https://m.youtube.com/watch?v=KaFJVg5vmRA
+
 This launcher uses Android Webview for its UI, which allows the user full control over their home screen via HTML/CSS/Javascript.  It does not run in full screen mode, so the default notifications bar and back/home/task switch navigation is preserved.  In order to set this as your launcher, you might need to go to: Settings --> Apps --> Default apps --> Home app
 
 From the Kotlin app side of things, the application can inject Javascript (and therefore add/modify dom elements) via webView.evaluateJavascript("your javascript here", null).  For example, that's how it adds the app list:
